@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: seriph
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: /assets/images/cover.png
@@ -30,33 +30,38 @@ h1 {
   position: absolute;
   top: 1rem;
   left: 20rem;
+  color: #2980b9;
+  text-transform: uppercase;
 }
 h1 + p {
   position: absolute;
   top: 6rem;
-  left: 16rem;
+  left: 13rem;
+  color: #3498db;
+  font-size: 1.5rem;
 }
 .cover {
+  background-image: url('/assets/images/cover.png') !important;
   background-size: contain !important;
 }
 </style>
 
 ---
 
-# C'est une histoire de petit Nicolas et son père
+# Je vais vous raconter l'histoire du petit Nicolas et de son père
 
-Son père, qu'est ce qu'il fait dans sa famille:
+Qu'est ce que fait son père dans sa famille:
 
--   📝 **Écouter** - toutes les demandes de sa femme et son fil
--   🎨 **Planifier** - toutes les voyages
+-   📝 **Écouter** - toutes les demandes de sa femme et son fils
+-   🎨 **Planifier** - tout les voyages
 -   🧑‍💻 **Construire** - la maison
--   🤹 **Dessiner** - toutes les murs
--   🎥 **Appeler** - des amis pour les soirées
--   📤 **Envoyer** - les cartes postales à les grandparents
--   🛠 **Réparer** - n'importe quoi qui a été cassé dans la maison
+-   🤹 **Dessiner** - tout les murs
+-   🎥 **Appeler** - des amis pour organiser les soirées
+-   📤 **Envoyer** - des cartes postales aux grand-parents
+-   🛠 **Réparer** - ce qui a été dans la maison
 
-<img src="/assets/images/pere2.png" class="absolute bottom-9 right-20 w-50 opacity-80">
-<img src="/assets/images/nicolas.png" class="absolute bottom-5 left-7 w-50 opacity-80">
+<img src="/assets/images/pere2.png" class="absolute bottom-9 right-20 w-40 opacity-80">
+<img src="/assets/images/nicolas.png" class="absolute bottom-5 left-7 w-35 opacity-80">
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -67,7 +72,7 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 # Et il existe une journée
 
-Père de petit Nicolas s'est trop occupé avec son travail, il n'a plus le temps pour sa femme et son fil. C'est le temps de partager!
+Le père du petit Nicolas est trop occupé avec son travail, il n'a plus de temps pour sa femme et son fil. Il est temps de partager!
 
 ```mermaid
 sequenceDiagram
@@ -83,19 +88,19 @@ sequenceDiagram
 
 ---
 
-# Et comment est-il relevant avec notre sujet aujourd'hui?
+# Quel est le rapport avec notre sujet d'aujourd'hui?
 
-On remplace `son père` par `main thread`, et faire un demi tour à notre contexte:
+On remplace `père` par `main thread`, et on recommence avec ce contexte:
 
 Main thread, qu'est ce qu'il fait dans notre navigateur:
 
--   📝 **Écouter** - toutes les évenements déclencher par notre application et chercher qui les interesse
+-   📝 **Écouter** - tout les évenements sont déclenchés par notre application et chercher qui les interesse
 -   🎨 **Planifier** - comment gérer les résources
--   🧑‍💻 **Construire** - l'abre de DOM
--   🤹 **Dessiner** - par appliquer les styles de CSS
+-   🧑‍💻 **Construire** - l'arbre de DOM
+-   🤹 **Dessiner** - appliquer les styles (CSS)
 -   🎥 **Appeler** - requêtes pour remplir notre app avec des données en réel
 -   📤 **Envoyer** - les demandes à Web API comme geolocation, notification,...etc
--   🛠 **Réparer** - l'appel a été échoué
+-   🛠 **Réparer** - l'appel qui a échoué
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -107,11 +112,11 @@ layout: image-right
 image: /assets/images/solution.png
 ---
 
-# Qu'est ce que le problème et comment Web worker nous aide ?
+# Quel est le problème et comment les Web workers nous aident ?
 
-Aujourd'hui, avec l'évolution de technologie, le main thread a pris beaucoup de tâches, et on sais que Javascript est une langage de _single thread_, il ne peut pas faire deux tâches en même temps.
+Aujourd'hui, avec l'évolution des technologies, le main thread gère beaucoup de tâches, et Javascript est un langage _single thread_, il ne peut pas faire deux tâches en même temps.
 
-Par contre, notre CPUs ont aussi évolué, ils ont plus que un coeur, pourquoi nous ne les profiterons pas?
+Par contre, nos CPUs ont aussi évolués, ils ont plus que un coeurs ❤️, pourquoi ne pas en profiter ?
 
 ---
 layout: image-left
